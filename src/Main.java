@@ -54,7 +54,7 @@ public class Main {
         int fsecondVariable = scanner.nextInt();
         System.out.println("Twój wynik to " + calc.sub(firstVariable, fsecondVariable));
 
- */
+
 
         Kalkulator liczydlo = new Kalkulator();
         Scanner scanner = new Scanner(System.in);
@@ -63,6 +63,32 @@ public class Main {
         System.out.println("Proszę podać drugą liczbę");
         int fsecondVariable = scanner.nextInt();
         System.out.println("Twój wynik to " + liczydlo.multiply(firstVariable, fsecondVariable));
+
+*/
+        Kalkulator liczydlo = new Kalkulator();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Proszę podać pierwszą liczbę");
+        int a = scanner.nextInt();
+        System.out.println("Jaką operację chcesz wykonać? Wpisz + lub - lub * lub /");
+        String znak = scanner.next();
+        System.out.println ("Proszę podać drugą liczbę");
+        int b = scanner.nextInt();
+
+        switch (znak){
+            case "+":
+                System.out.println(liczydlo.add(a,b));
+                break;
+            case "-":
+                System.out.println(liczydlo.sub(a,b));
+                break;
+            case "*":
+                System.out.println(liczydlo.multiply(a,b));
+                break;
+            case "/":
+                System.out.println(liczydlo.divide(a,b));
+                break;
+        }
+
     }
 
 }
