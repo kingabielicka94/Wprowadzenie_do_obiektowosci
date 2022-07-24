@@ -64,4 +64,5 @@ public class Main {
         int fsecondVariable = scanner.nextInt();
         System.out.println("Twój wynik to " + liczydlo.multiply(firstVariable, fsecondVariable));
     }
+
 }
