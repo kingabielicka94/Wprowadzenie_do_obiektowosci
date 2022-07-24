@@ -6,14 +6,20 @@ public class Main {
         audi.setAutomaticGearbox(true);
         System.out.println(audi.getAutomaticGearbox());
 
-        System.out.println(audi.getColour());
-        audi.setColour("Red");
+        Car suzuki = new Car("Black", 3, "1500", false);
+        System.out.println(suzuki.getColour());
+        suzuki.setColour("White");
+        System.out.println(suzuki.getColour());
 
-        System.out.println(audi.getDoorsAmount());
-        audi.setDoorsAmount(5);
+        Car bmw = new Car("Blue", 5, "M3", true);
+        System.out.println(bmw.getDoorsAmount());
+        audi.setDoorsAmount(3);
+        System.out.println(bmw.getDoorsAmount());
 
-        System.out.println(audi.getBrand());
-        audi.setBrand("A4");
+        Car renault = new Car("Silver", 5, "Clio", false);
+        System.out.println(renault.getBrand());
+        suzuki.setBrand("GT");
+        System.out.println(renault.getBrand());
 
     }
 }
